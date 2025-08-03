@@ -1,7 +1,6 @@
 package com.aluracursos.literalura.challenge.service;
 
 import com.aluracursos.literalura.challenge.dto.ApiResponseDto;
-import com.aluracursos.literalura.challenge.dto.LibroDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
