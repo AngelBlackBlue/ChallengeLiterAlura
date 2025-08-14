@@ -79,23 +79,6 @@ Una aplicación de consola desarrollada en Java con Spring Boot que permite busc
 - Muestra conteo de libros por idioma
 - Soporta: Inglés, Español, Francés, Portugués
 
-## 🏗️ Arquitectura del Proyecto
-
-```
-src/main/java/com/aluracursos/literalura/challenge/
-├── dto/
-│   ├── ApiResponseDto.java
-│   └── LibroDto.java
-├── entity/
-│   ├── Autor.java
-│   └── Libro.java
-├── repository/
-│   ├── AutorRepository.java
-│   └── LibroRepository.java
-├── service/
-│   └── LibrosApiService.java
-└── ChallengeApplication.java
-```
 
 ## 🔍 Características Técnicas
 
@@ -104,12 +87,6 @@ El proyecto utiliza derived queries de Spring Data JPA para consultas complejas:
 ```java
 List<Autor> findByAnioNacimientoLessThanEqualAndAnioFallecimientoIsNullOrAnioNacimientoLessThanEqualAndAnioFallecimientoGreaterThanEqual(Integer anio1, Integer anio2, Integer anio3);
 ```
-
-### Validación de Datos
-- Validación de entrada numérica
-- Verificación de rangos de años (0-2024)
-- Manejo de cadenas vacías
-- Mensajes de error descriptivos
 
 ### Manejo de Errores
 - Try-catch para operaciones de red
@@ -142,14 +119,3 @@ El proyecto consume la **API de Gutendex** (https://gutendex.com/) para obtener 
 3. Sigue las instrucciones en pantalla
 4. Para salir, selecciona la opción 0
 
-## 🤝 Contribuciones
-
-Este proyecto fue desarrollado como parte del programa ONE de Alura Latam.
-
-## 📝 Licencia
-
-Proyecto educativo desarrollado para el Challenge de Alura.
-
----
-
-**Desarrollado con ❤️ como parte del programa ONE - Oracle Next Education**
